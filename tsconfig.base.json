@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@incident-management/api/incident": ["libs/api/incident/src/index.ts"]
+      "@incident-management/api/incident": ["libs/api/incident/src/index.ts"],
+      "@incident-management/incident/feature/list": [
+        "libs/incident/feature/list/src/index.ts"
+      ],
+      "@incident-management/shared/footer": ["libs/shared/footer/src/index.ts"],
+      "@incident-management/shared/navbar": ["libs/shared/navbar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

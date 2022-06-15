@@ -5,6 +5,9 @@
     "api-incident": "libs/api/incident",
     "incident-api": "apps/incident-api",
     "incident-app": "apps/incident-app",
-    "incident-app-e2e": "apps/incident-app-e2e"
+    "incident-app-e2e": "apps/incident-app-e2e",
+    "incident-feature-list": "libs/incident/feature/list",
+    "shared-footer": "libs/shared/footer",
+    "shared-navbar": "libs/shared/navbar"
   }
 }

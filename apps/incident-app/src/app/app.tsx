@@ -1,21 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import './app.module.scss';
+import { IncidentFeatureList } from '@incident-management/incident/feature/list';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
     <>
-      <NxWelcome title="incident-app" />
-      <div />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
+      <IncidentFeatureList />
       <div role="navigation">
         <ul>
           <li>
