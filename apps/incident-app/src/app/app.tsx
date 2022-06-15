@@ -1,16 +1,18 @@
 import './app.module.scss';
 import { IncidentFeatureList } from '@incident-management/incident/feature/list';
+import { Footer } from '@incident-management/shared/footer';
+import { Navbar } from '@incident-management/shared/navbar';
 
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, Link, Navigate } from 'react-router-dom';
 
 export function App() {
   return (
     <>
-      <IncidentFeatureList />
+      <Navbar />
       <div role="navigation">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/incident/list">Home</Link>
           </li>
           <li>
             <Link to="/page-2">Page 2</Link>
@@ -18,15 +20,7 @@ export function App() {
         </ul>
       </div>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
+        <Route path="/incident/list" element={<IncidentFeatureList />} />
         <Route
           path="/page-2"
           element={
@@ -35,8 +29,10 @@ export function App() {
             </div>
           }
         />
+        <Route path="" element={<Navigate replace to="/incident/list" />} />
       </Routes>
       {/* END: routes */}
+      <Footer />
     </>
   );
 }

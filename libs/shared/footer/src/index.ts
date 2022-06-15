@@ -1,1 +1,1 @@
-export * from './lib/shared-footer';
+export * from './lib/footer';

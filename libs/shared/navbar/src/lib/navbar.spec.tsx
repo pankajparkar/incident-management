@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import SharedFooter from './shared-footer';
+import SharedNavbar from './navbar';
 
-describe('SharedFooter', () => {
+describe('SharedNavbar', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<SharedFooter />);
+    const { baseElement } = render(<SharedNavbar />);
     expect(baseElement).toBeTruthy();
   });
 });

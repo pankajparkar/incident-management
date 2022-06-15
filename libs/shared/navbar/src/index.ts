@@ -1,1 +1,1 @@
-export * from './lib/shared-navbar';
+export * from './lib/navbar';
